@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos Vencidos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .produto {
+            display: flex; /* Exibe em linha */
+            align-items: center; /* Alinha verticalmente */
+            margin-bottom: 10px; /* Espaço entre os produtos */
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .produto img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px; /* Espaço entre a imagem e o texto */
+        }
+        .produto button {
+            margin-left: auto; /* Faz o botão ir para a direita */
+            background-color: red; /* Cor do botão */
+            color: white; /* Texto do botão */
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .produto button:hover {
+            background-color: darkred; /* Cor do botão ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Produtos Vencidos</h1>
+        <p>Lista de produtos vencidos:</p>
+        <div id="produtosVencidos"></div>
+        <button onclick="window.location.href='index.html'">Voltar ao Menu</button>
+    </div>
+
+   
+</body>
+</html>
